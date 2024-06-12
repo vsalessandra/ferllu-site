@@ -24,19 +24,12 @@ header {
     margin-top: 250px;
     margin-bottom: 40px;
     height: 90px;
-    box-shadow: 0 -15px 25px -10px rgba(201, 76, 170, 0.425);
-    background: #FADBEB;
+    background: #fadbebb4;
+    box-shadow: 
+        0 -30px 15px -5px #fadbeba1, /* Sombra superior */
+        0 19px 16px -5px rgba(201, 76, 170, 0.425); /* Sombra inferior */
 }
 
-.triangulo-cima {
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 100px solid rgb(255, 255, 255);
-    margin-right: 520px;
-    margin-top: 120px;
-}
 
 #logo-menor {
     position: absolute;
@@ -68,6 +61,7 @@ header {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     color: #444;
+    text-decoration: none;
 }
 
 .itens a {
@@ -215,6 +209,7 @@ p{
 }
 
 .cuidados {
+    box-shadow: 0 10px 15px  rgba(99, 64, 88, 0.425);
     height: 45px;
     background-color: #ffffff;
     color: #773636;
@@ -226,9 +221,9 @@ p{
 }
 
 .cuidados:hover {
-    background-color: #fda1d5;
-    transform: scale(1.05);
-    transition: 0.3s all;
+    background-color: #fadbeb;
+    color: #773636;
+    transition: 0.10s all;
 }
 
 footer {
