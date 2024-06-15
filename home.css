@@ -17,7 +17,7 @@ header {
 
 #nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 0px;
     padding: 20px;
@@ -26,8 +26,8 @@ header {
     height: 90px;
     background: #fadbebb4;
     box-shadow: 
-        0 -30px 15px -5px #fadbeba1, /* Sombra superior */
-        0 19px 16px -5px rgba(201, 76, 170, 0.425); /* Sombra inferior */
+        0 -30px 15px -5px #fadbeba1, 
+        0 19px 16px -5px rgba(201, 76, 170, 0.425); 
 }
 
 
@@ -51,7 +51,6 @@ header {
     display: flex;
     list-style: none;
     margin-top: 0px;
-
 }
 
 .itens {
@@ -66,6 +65,8 @@ header {
 
 .itens a {
     text-decoration: none;
+    color: #444;
+    font-size: 16px;
 }
 
 .itens:hover {
@@ -83,12 +84,13 @@ header {
     border: 1px solid #910c57;
     border-radius: 12px 0 0 12px;
     outline: none;
-    width: 300px;
+    width: 330px;
+    height: 20px;
 }
 
 .botao-pesquisa {
-    width: 42px;
-    height: 36px;
+    width: 2.5rem;
+    height: 2.3rem;
     background-color: #A81469;
     border: none;
     border-radius: 0 20px 20px 0;
@@ -227,36 +229,67 @@ p{
 }
 
 footer {
-    background-color: #ffffff;
+    margin: 10rem;
+}
+
+.main-content-footer {
+    border-bottom: 1px solid;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+.section-footer {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.section-bottom-footer {
+    display: flex;
+    padding-top: 4px;
+}
+
+.lower-footer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.pink-text {
+    padding-top: 10px;
+    margin-left: 320px;
+    font-size: 20px;
+    color: #9A1E5A;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
 }
 
 .itens-footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
     margin-bottom: 20px;
 }
 
-.logos {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
 
-p {
-    margin: 0;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    color: #444;
+.itens-footer p{
+    text-align: justify;
 }
 
 #botao-fixo {
     position: fixed;
-    bottom: 30px;
-    right: 10px;
+    bottom: 60px;
+    right: 30px;
     background: #fdeaea;
     color: #fff;
     border: none;
@@ -275,6 +308,8 @@ p {
     #nav {
         flex-direction: column;
         align-items: flex-start;
+        padding: 3px;
+        height: 100px;
     }
     .pesquisar {
         margin-top: 10px;
@@ -287,10 +322,14 @@ p {
         width: 42px;
     }
     .lista {
-        width: 100%;
+        width: 89%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
     }
     .itens {
-        margin-right: 2px;
+        margin-left: -30px;
+        font-size: 16px;
         margin-bottom: 0px;
     }
     .recentes, .destaques {
@@ -310,19 +349,18 @@ p {
 @media (max-width: 480px) {
     .procurar {
         width: 100%;
-        border-radius: 20px;
+        height: 16px;
+        border-radius: 12px 0 0 12px;
     }
     .botao-pesquisa {
-        width: 100%;
-        margin-top: 5px;
-        border-radius: 20px;
+        border-radius: 0 20px 20px 0;
+        
     }
     .pesquisar {
-        flex-direction: column;
         width: 100%;
     }
     .recentes, .destaques {
-        width: 150px;
+        width: 90%;
         margin: 20px;
     }
     .img-preta img {
@@ -330,8 +368,39 @@ p {
     }
     .seta {
         width: 100%;
+        display: none;
+     
+    }
+
+    footer {
+        margin: 2rem;
+    }
+
+    .main-content-footer{
         display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+
+    .section-bottom-footer {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .itens-footer {
+        display: flex;
+        align-items: start;
+        
+        gap: 0.5rem;
+        margin-bottom: 20px;
+    }
+
+    .pink-text {
+        padding-top: 10px;
+        margin-left: 0rem;
+        font-size: 1.5rem;
+        color: #9A1E5A;
+        font-family: 'Architects Daughter', cursive;
     }
 }
