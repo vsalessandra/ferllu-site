@@ -153,18 +153,19 @@ header {
 
 .text-box {
     color: black
+
 }
 
 .text-box h2 {
     font-size: 42px;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-top: 55px;
     color: #A81469;
 }
 
 .text-box p {
     font-size: 16px;
-    margin-right: 200px;
+    margin-right: 150px;
     margin-top: 30px;
 
 }
@@ -178,7 +179,7 @@ header {
     margin-top: 8px;
 }
 
-.img-preta{
+.img-preta {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -199,7 +200,7 @@ header {
 }
 
 .img-preta2 img{
-    width: 320px;
+    width: 340px;
 }
 
 .recentes-container, .secao2 {
@@ -294,73 +295,71 @@ p{
     transition: 0.10s all;
 }
 
-.dropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh;
-    background-color: white;
-}
-
 .accordion {
-    max-height: 800px;
+    margin: 60px auto;
+    width: 600px;
 }
 
-.accordion .contentBx {
-    position: relative;
-    margin: 20px 20px;
-}
-
-.accordion .contentBx .label {
-    font-size: 20px;
-    font-style: italic;
-    position: relative;
-    margin-right: 50px;
-    margin-left: 50px;
-    padding: 16px;
-    background-color: #861154e3;
-    color: white;
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
-
-.accordion .contentBx .label::before {
-    content: "+";
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-}
-
-.content p {
-    color: black;
-    font-size: 17px;
-}
-
-.accordion .contentBx .content {            
-    position: relative;
-    background: #fadbebb4;
-    height: 0;
-    margin-right: 50px;
-    margin-left: 50px;
-    overflow: hidden;
-    transition: 0.3s;
-    overflow-y: auto;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-}
-
-.accordion .contentBx.active .content {
-    height: 150px;
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
     padding: 10px;
+    border-radius: 8px;
+    background: #A81469;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
-.accordion .contentBx.active .label::before{
-    content: '-';
+.accordion li label {
+    display: flex;
+    color: white;
+    align-items: center;
+    right: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
 }
+
+.accordion li label {
+}
+
+label::before {
+    content: "+";
+    margin-right: 10px;
+    font-size: 24;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s; 
+}
+
+input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+input[type="radio"]:checked + label::before{
+    content: "-";
+}
+
+
+.content p{ 
+    color: white;
+}
+
+
 
 footer {
     margin: 10rem;
