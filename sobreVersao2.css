@@ -438,12 +438,15 @@ footer {
     .accordion li {
         display: block;
         margin-bottom: 10px;
+        color:#A81469;
+        width: 260px;
+        height: 130px;
     }
 
     .accordion li label {
         display: block;
         cursor: pointer;
-        background-color: #f0f0f0;
+        background-color: #A81469;
         padding: 10px;
     }
 
@@ -454,5 +457,11 @@ footer {
 
     .accordion li input[type="radio"]:checked + label + .content {
         display: block; 
+    }
+
+    .content p{
+        font-size: 10px;
+        margin-block: -10px;
+        display: inline-block;
     }
 }
