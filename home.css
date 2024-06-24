@@ -202,32 +202,6 @@ p{
     width: 150px;
 }
 
-.botoes-cuidados {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 10px;
-    margin: 30px 0;
-    text-align: center;
-}
-
-.cuidados {
-    box-shadow: 0 10px 15px  rgba(99, 64, 88, 0.425);
-    height: 45px;
-    background-color: #ffffff;
-    color: #773636;
-    border-radius: 20px;
-    border: 1px, solid, #99224a;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: relative;
-}
-
-.cuidados:hover {
-    background-color: #fadbeb;
-    color: #773636;
-    transition: 0.10s all;
-}
-
 footer {
     margin: 10rem;
 }
