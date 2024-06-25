@@ -30,7 +30,6 @@ header {
         0 19px 16px -5px rgba(201, 76, 170, 0.425); 
 }
 
-
 #logo-menor {
     position: absolute;
     top: 10px;
@@ -114,8 +113,7 @@ header {
     font-style: italic;
 }
 
-
-.titulo1{
+.titulo1 {
     text-align: center;
     margin: 40px 0 20px;
     font-size: 18px;
@@ -143,8 +141,7 @@ header {
 }
 
 .text-box {
-    color: black
-
+    color: black;
 }
 
 .text-box h2 {
@@ -158,10 +155,9 @@ header {
     font-size: 15px;
     margin-right: 150px;
     margin-top: 30px;
-
 }
 
-.titulo-cuidados{
+.titulo-cuidados {
     text-align: center;
     margin: 40px 0 20px;
     font-size: 18px;
@@ -186,11 +182,11 @@ header {
     margin-top: 100px;
 }
 
-.img-preta img{
+.img-preta img {
     width: 340px;
 }
 
-.img-preta2 img{
+.img-preta2 img {
     width: 340px;
 }
 
@@ -241,21 +237,18 @@ input[type="radio"] {
     transition: max-height 0.5s, padding 0.5s; 
 }
 
-input[type="radio"]:checked + label + .content{
+input[type="radio"]:checked + label + .content {
     max-height: 400px;
     padding: 10px 10px 20px;
 }
 
-input[type="radio"]:checked + label::before{
+input[type="radio"]:checked + label::before {
     content: "-";
 }
 
-
-.content p{ 
+.content p { 
     color: white;
 }
-
-
 
 footer {
     margin: 10rem;
@@ -286,7 +279,6 @@ footer {
     padding: 20px;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .pink-text {
@@ -310,8 +302,7 @@ footer {
     margin-bottom: 20px;
 }
 
-
-.itens-footer p{
+.itens-footer p {
     text-align: justify;
 }
 
@@ -331,8 +322,6 @@ footer {
 #botao-fixo:hover {
     transform: scale(1.1);
 }
-
-
 @media (max-width: 768px) {
     #nav {
         flex-direction: column;
@@ -359,7 +348,7 @@ footer {
     .itens {
         margin-left: -30px;
         font-size: 16px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     .recentes, .destaques {
         width: 70%;
@@ -371,97 +360,59 @@ footer {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 40px;
     }
-}
+    .text-box h2 {
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
 
-@media (max-width: 480px) {
-    .procurar {
-        width: 100%;
-        height: 16px;
-        border-radius: 12px 0 0 12px;
-    }
-    .botao-pesquisa {
-        border-radius: 0 20px 20px 0;
+    .text-box p {
+        font-size: 14px;
+        margin-right: 10px;
+        margin-left: 10px;
         
     }
-    .pesquisar {
-        width: 100%;
+    .accordion {
+        width: 80%;
+        margin-left: -30px;
+        margin: px auto;
     }
-    .recentes, .destaques {
-        width: 90%;
-        margin: 20px;
+    .accordion li {
+        margin:     px 0;
     }
-    .img-preta img {
-        width: 180px;
-    }
-    .seta {
-        width: 100%;
-        display: none;
-     
+    .accordion .content {
+        font-size: 14px;
     }
 
     footer {
         margin: 2rem;
     }
 
-    .main-content-footer{
-        display: flex;
+    .main-content-footer {
         flex-direction: column;
         padding-left: 2rem;
     }
 
     .section-bottom-footer {
-        display: flex;
         flex-direction: column;
         padding-top: 5px;
     }
 
     .itens-footer {
-        display: flex;
         align-items: start;
-        
         gap: 0.5rem;
         margin-bottom: 20px;
     }
 
     .pink-text {
-        padding-top: 10px;
-        margin-left: 0rem;
+        margin-left: 0;
         font-size: 1.5rem;
-        color: #9A1E5A;
-        font-family: 'Architects Daughter', cursive;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .accordion li {
-        display: block;
-        margin-bottom: 10px;
-        color:#A81469;
-        width: 260px;
-        height: 130px;
+    .title-servicos, .content-servicos p, .title-vantagens {
+        margin: 0 20px;
     }
 
-    .accordion li label {
-        display: block;
-        cursor: pointer;
-        background-color: #A81469;
-        padding: 10px;
-    }
-
-    .accordion li .content {
-        display: none;
-        padding: 10px;
-    }
-
-    .accordion li input[type="radio"]:checked + label + .content {
-        display: block; 
-    }
-
-    .content p{
-        font-size: 10px;
-        margin-block: -10px;
-        display: inline-block;
-    }
 }
